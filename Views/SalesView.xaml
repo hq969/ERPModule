@@ -1,0 +1,24 @@
+<UserControl x:Class="ProBizERP.Views.SalesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Record Sale" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <ComboBox Width="200" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedProduct}" DisplayMemberPath="Name" Margin="0,0,10,0"/>
+                <TextBox Width="100" Text="{Binding SaleQuantity, UpdateSourceTrigger=PropertyChanged}" PlaceholderText="Quantity" Margin="0,0,10,0"/>
+                <Button Content="Record Sale" Width="120" Click="RecordSale_Click"/>
+            </StackPanel>
+            <TextBlock Text="Sales List" FontWeight="Bold" FontSize="16" Margin="0,10,0,5"/>
+            <DataGrid ItemsSource="{Binding Sales}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                    <DataGridTextColumn Header="Product ID" Binding="{Binding ProductId}" Width="100"/>
+                    <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="100"/>
+                    <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice}" Width="100"/>
+                    <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="150"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>
