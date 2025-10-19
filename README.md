@@ -1,113 +1,108 @@
-# ProBizERP 🚀
+# 🏢 ERPModule – WPF Desktop ERP Application
 
-**ProBizERP** is a professional desktop-based Enterprise Resource Planning (ERP) application tailored for **small and medium-scale businesses**. It streamlines **inventory management**, **sales tracking**, and **reporting** into a single, user-friendly application built with **C# WPF** and **SQLite**.  
-
----
-
-## 🌟 Features
-
-### Inventory Management
-- Add, edit, and remove products
-- Track stock levels in real-time
-- Categorize products for easy access
-
-### Sales Management
-- Record sales transactions
-- Manage invoices efficiently
-- Monitor sales trends and revenue
-
-### Reporting & Analytics
-- Generate daily, weekly, and monthly reports
-- Export reports in CSV or PDF format
-- Visualize data with interactive charts
+### A **desktop-based ERP application** built with **C#, WPF, Prism, and SQLite**, designed to streamline inventory, sales, and reporting processes for small and medium-scale businesses.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Overview
 
-| Layer | Technology |
-|-------|------------|
-| Programming Language | C# |
-| UI Framework | WPF (Windows Presentation Foundation) |
-| Architecture | MVVM using Prism Framework |
-| Database | SQLite |
-| IDE | Visual Studio |
-| Data Access | ADO.NET |
-| Optional Libraries | LiveCharts, OxyPlot |
+The **ERPModule** helps businesses manage core operations efficiently:
+
+* 📦 **Inventory Management** — Track products, stock levels, and suppliers.
+* 💰 **Sales & Orders** — Record sales, generate invoices, and manage orders.
+* 📊 **Reporting & Analytics** — View performance metrics, sales trends, and inventory summaries.
+* 🗂️ **Database Integration** — Persist data locally using SQLite.
+* 🧩 **Modular Architecture** — Built using MVVM design pattern for maintainability.
+
+---
+
+## 🧱 Tech Stack
+
+| Layer                                 | Technology Used                       |
+| ------------------------------------- | ------------------------------------- |
+| **UI / Frontend**                     | WPF (Windows Presentation Foundation) |
+| **Architecture**                      | MVVM with Prism Framework             |
+| **Database**                          | SQLite                                |
+| **Dependency Injection & Modularity** | Prism                                 |
+| **Platform**                          | Windows Desktop                       |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-
-ProBizERP/
-├── ProBizERP.sln                # Visual Studio solution file
-├── ProBizERP/
-│   ├── App.xaml                 # Application definition
-│   ├── App.xaml.cs              # Application logic
-│   ├── MainWindow.xaml          # Main window UI
-│   ├── MainWindow.xaml.cs       # Main window logic
-│   ├── Views/
-│   │   ├── InventoryView.xaml
-│   │   ├── InventoryView.xaml.cs
-│   │   ├── SalesView.xaml
-│   │   ├── SalesView.xaml.cs
-│   │   ├── ReportView.xaml
-│   │   └── ReportView.xaml.cs
-│   ├── ViewModels/
-│   │   ├── InventoryViewModel.cs
-│   │   ├── SalesViewModel.cs
-│   │   └── ReportViewModel.cs
-│   └── Models/
-│       ├── Product.cs
-│       ├── Sale.cs
-│       └── DatabaseHelper.cs
-
-````
+ERPModule/
+│
+├── App.xaml                 # Application definition
+├── App.xaml.cs              # Application logic
+├── MainWindow.xaml          # Main window UI
+├── MainWindow.xaml.cs       # Main window logic
+│
+├── Views/                   # WPF Views (XAML)
+│   ├── InventoryView.xaml
+│   ├── InventoryView.xaml.cs
+│   ├── SalesView.xaml
+│   ├── SalesView.xaml.cs
+│   ├── ReportView.xaml
+│   └── ReportView.xaml.cs
+│
+├── ViewModels/              # MVVM ViewModels
+│   ├── InventoryViewModel.cs
+│   ├── SalesViewModel.cs
+│   └── ReportViewModel.cs
+│
+└── Models/                  # Data Models & Helpers
+    ├── Product.cs
+    ├── Sale.cs
+    └── DatabaseHelper.cs
+```
 
 ---
 
-## ⚡ Getting Started
+## ⚙️ Setup & Installation
 
-### Prerequisites
-- Windows OS
-- [Visual Studio](https://visualstudio.microsoft.com/) 2019 or later
-- .NET Framework 4.7.2 or higher
+### Step 1: Clone Repository
 
-### Installation
-1. Clone the repository:  
 ```bash
-git clone https://github.com/hq969/ProBizERP.git
-````
+git clone https://github.com/hq969/ERPModule.git
+cd ERPModule
+```
 
-2. Open the solution file `ProBizERP.sln` in Visual Studio.
+### Step 2: Restore NuGet Packages
 
-3. Restore NuGet packages if required.
+Open **ERPModule.sln** in Visual Studio. Ensure all NuGet packages (Prism, SQLite) are restored.
 
-4. Build and run the application.
+### Step 3: Build & Run
 
----
-
-## 🎯 Future Enhancements
-
-* Multi-user login system with role-based access
-* Cloud-based database support
-* Advanced analytics dashboard with KPI tracking
-* Integration with barcode scanners for inventory management
+* Press **F5** in Visual Studio to run the application.
+* The **MainWindow** will open, allowing navigation to Inventory, Sales, and Reports views.
 
 ---
 
-## 📧 Contact
+## 📱 Application Flow
 
-**Developer:** Harsh Sonkar
-**Email:** [contact.harshsonkar@gmail.com](mailto:contact.harshsonkar@gmail.com)
-**LinkedIn:** [linkedin.com/in/harshsonkar](https://www.linkedin.com/in/harsh-sonkar-232573250/ )
+1. **MainWindow** → Dashboard with navigation menu.
+2. **InventoryView** → Add, update, or delete products and manage stock levels.
+3. **SalesView** → Record sales, generate invoices, and view daily transactions.
+4. **ReportView** → Generate reports for sales, inventory, and performance metrics.
 
 ---
 
-## 📜 License
+## 🔒 Future Enhancements
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+* 🧩 Cloud multi-user sync
+* 📊 Advanced reporting with charts and export options
+* 🏷️ Barcode scanning for inventory management
+* 🤖 AI-assisted sales predictions
+
+---
+
+## 👨‍💻 Author
+
+**Harsh Sonkar**
+
+* ✉️ Email: [contact.harshsonkar@gmail.com](mailto:contact.harshsonkar@gmail.com)
+* 📞 Phone: 6261205490
+* 🌐 [LinkedIn](https://www.linkedin.com/in/harsh-sonkar-232573250/)
 
 ---
