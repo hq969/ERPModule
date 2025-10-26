@@ -64,8 +64,8 @@ ERPModule/
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/hq969/ERPModule.git
-cd ERPModule
+git clone https://github.com/hq969/ERPModule-WPF.git
+cd ERPModule-WPF
 ```
 
 ### Step 2: Restore NuGet Packages
